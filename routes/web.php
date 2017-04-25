@@ -22,6 +22,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
+    Route::get('audio', 'AudioController@index')->name('audio');
+
     Route::get('videoJS', 'VideoJSController@index')->name('videoJS');
 
     Route::get('video', 'VideoController@index')->name('video');

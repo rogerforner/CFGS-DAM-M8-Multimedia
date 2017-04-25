@@ -33,6 +33,7 @@ Menu::macro('sidebar', function () {
 
         ->add(Menu::adminlteSeparator('ACTIVITIES'))
         #adminlte_menu
+        ->add(Link::toUrl('audio', '<i class="fa fa-link"></i><span>Audio</span>'))
         ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-code"></i><span>D3.js</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')
             ->add(Link::toUrl('d3demo', '<i class="fa fa-link"></i><span>D3demo</span>'))->addClass('treeview-menu')
