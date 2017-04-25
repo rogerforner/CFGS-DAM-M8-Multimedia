@@ -19,6 +19,7 @@ window.toastr = require('toastr')
 require('icheck')
 
 require('./d3/demo.js')
+require('video.js')
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
