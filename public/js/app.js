@@ -39090,13 +39090,13 @@ window.$ = window.jQuery = __webpack_require__(22);
 
 __webpack_require__(31);
 
-window.d3 = __webpack_require__(98);
-
 __webpack_require__(68);
 window.toastr = __webpack_require__(105);
 __webpack_require__(100);
 
+window.d3 = __webpack_require__(98);
 __webpack_require__(92);
+
 __webpack_require__(161);
 
 /**
