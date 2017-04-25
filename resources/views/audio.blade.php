@@ -10,21 +10,33 @@
 		<div class="row">
 			<div class="col-md-9 col-md-offset-1">
 
-				<div class="box box-success box-solid">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Example box</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        </div>
-                        <!-- /.box-tools -->
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        Put your content here
-                    </div>
-                    <!-- /.box-body -->
+                <div class="test">Audio Another day in paradise:</div>
+
+                <audio id="demo2" src="https://upload.wikimedia.org/wikipedia/en/9/9f/Sample_of_%22Another_Day_in_Paradise%22.ogg" preload="auto" controls></audio>
+
+                <div>
+                    <button onclick="document.getElementById('demo2').play()">Reproducir el Audio</button>
+                    <button onclick="document.getElementById('demo2').pause()">Pausar el Audio</button>
+                    <button onclick="document.getElementById('demo2').volume+=0.1">Aumentar el Volumen</button>
+                    <button onclick="document.getElementById('demo2').volume-=0.1">Disminuir el Volumen</button>
                 </div>
+
+                <hr>
+
+                <div class="test">Audio Bullet in the head:</div>
+
+                <audio id="demo3" src="https://upload.wikimedia.org/wikipedia/en/1/17/Bullet_In_The_Head.ogg" preload="auto" controls></audio>
+
+                <div>
+                    <button onclick="document.getElementById('demo3').play()">Reproducir el Audio</button>
+                    <button onclick="document.getElementById('demo3').pause()">Pausar el Audio</button>
+                    <button onclick="document.getElementById('demo3').volume+=0.1">Aumentar el Volumen</button>
+                    <button onclick="document.getElementById('demo3').volume-=0.1">Disminuir el Volumen</button>
+                </div>
+
+                <hr>
+
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Usando_audio_y_video_con_HTML5">Més info</a>
 
 			</div>
 		</div>

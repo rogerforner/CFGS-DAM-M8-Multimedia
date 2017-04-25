@@ -33,15 +33,18 @@ Menu::macro('sidebar', function () {
 
         ->add(Menu::adminlteSeparator('ACTIVITIES'))
         #adminlte_menu
-        ->add(Link::toUrl('audio', '<i class="fa fa-link"></i><span>Audio</span>'))
         ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-code"></i><span>D3.js</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')
             ->add(Link::toUrl('d3demo', '<i class="fa fa-link"></i><span>D3demo</span>'))->addClass('treeview-menu')
         )
-        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-video-camera"></i><span>Videos</span> <i class="fa fa-angle-left pull-right"></i></a>')
+        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-video-camera"></i><span>Video</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')
             ->add(Link::toUrl('videoJS', '<i class="fa fa-link"></i><span>VideoJS</span>'))->addClass('treeview-menu')
             ->add(Link::toUrl('video', '<i class="fa fa-link"></i><span>Video</span>'))
+        )
+        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-headphones"></i><span>Audio</span> <i class="fa fa-angle-left pull-right"></i></a>')
+            ->addParentClass('treeview')
+            ->add(Link::toUrl('audio', '<i class="fa fa-link"></i><span>Audio</span>'))->addClass('treeview-menu')
         )
 
         ->add(Menu::adminlteSeparator('EXTERNAL LINKS'))
